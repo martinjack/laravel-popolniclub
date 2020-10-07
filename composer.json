@@ -1,0 +1,40 @@
+{
+  "name": "jackmartin/laravel-popolniclub",
+  "description": "Laravel package PopolniClub API",
+  "keywords": [
+    "api",
+    "library",
+    "popolniclub",
+    "popolni phone",
+    "popolniclubapi",
+    "laravel",
+    "laravel packages"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/martinjack/laravel-popolniclub",
+  "authors": [
+    {
+      "name": "Evgen Kytonin",
+      "email": "killfess@gmail.com"
+    }
+  ],
+  "require": {
+    "jackmartin/poponliclub": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "PopolniClubLaravel\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PopolniClubLaravel\\PopolniClubServiceProvider"
+      ],
+      "aliases": {
+        "PopolniClubLaravel": "PopolniClubLaravel\\Facades\\PopolniClubFacade"
+      }
+    }
+  }
+}

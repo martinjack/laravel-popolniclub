@@ -25,7 +25,7 @@ class PopolniClubLaravel extends Pophone
      * @return VOID
      *
      */
-    public function __construct($login, $password, $sandbox = false)
+    public function __construct($login = null, $password = null, $sandbox = false)
     {
 
         ##
@@ -35,7 +35,7 @@ class PopolniClubLaravel extends Pophone
         $password = config('popolniclub-laravel.password') === $password ? $password : config('popolniclub-laravel.password');
         $sandbox  = config('popolniclub-laravel.sandbox') === $sandbox ? $sandbox : config('popolniclub-laravel.sandbox');
         #
-        parent::__contruct(
+        parent::__construct(
 
             $login,
             $password,

@@ -1,6 +1,8 @@
 # Описание
 
-Laravel пакет для работы c API [PopolniClub](https://popolni.club/)
+[![Latest Stable Version](https://poser.pugx.org/jackmartin/laravel-popolniclub/v)](//packagist.org/packages/jackmartin/laravel-popolniclub) [![Total Downloads](https://poser.pugx.org/jackmartin/laravel-popolniclub/downloads)](//packagist.org/packages/jackmartin/laravel-popolniclub) [![License](https://poser.pugx.org/jackmartin/laravel-popolniclub/license)](//packagist.org/packages/jackmartin/laravel-popolniclub)
+
+Laravel пакет для работы с API [PopolniClub](https://popolni.club/)
 
 > Read this in other language: [English](README.en.md), [Русский](README.md), [Український](README.ua.md)
 
@@ -97,7 +99,7 @@ print_r(
 ```php
 print_r(
 
-    \PopolniClubLaravel::addPayment(1000000001)->statusPayment()->getData()
+    \PopolniClubLaravel::addTransaction(1000000001)->statusPayment()->getData()
 
 );
 ```

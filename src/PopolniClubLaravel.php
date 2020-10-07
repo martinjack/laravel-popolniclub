@@ -14,6 +14,17 @@ use PopolniClub\Pophone;
 class PopolniClubLaravel extends Pophone
 {
 
+    /**
+     *
+     * INIT
+     *
+     * @param STRING $login
+     * @param STRING $password
+     * @param BOOLEAN $sandbox
+     *
+     * @return VOID
+     *
+     */
     public function __construct($login, $password, $sandbox = false)
     {
 

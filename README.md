@@ -21,7 +21,7 @@ Laravel пакет для работы c API [PopolniClub](https://popolni.club/
 
 # Composer
 ```bash
-compose require jackmartin/laravel-popolniclub
+composer require jackmartin/laravel-popolniclub
 ```
 
 ## Laravel настройка

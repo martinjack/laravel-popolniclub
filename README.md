@@ -80,12 +80,36 @@ php artisan vendor:publish --provider="PopolniClubLaravel\PopolniClubServiceProv
 
 ### sendPayment()
 ```php
+print_r(
+
+    \PopolniClubLaravel::setTransactionID()
+        ->setSumm(1)
+        ->setPhone('380000000000')
+        ->setTemplateID()
+        ->addPayment()
+        ->sendPayment()
+        ->getData()
+
+);
 ```
 
 ### statusPayment()
 ```php
+print_r(
+
+    \PopolniClubLaravel::addPayment(1000000001)->statusPayment()->getData()
+
+);
 ```
 
 ### currentBalance()
 ```php
+print_r(
+
+    \PopolniClubLaravel::currentBalance()->getData()
+    // \PopolniClubLaravel::currentBalance()->balance()
+    // \PopolniClubLaravel::currentBalance()->balance(true)
+    // \PopolniClubLaravel::currentBalance()->credit()
+
+);
 ```
